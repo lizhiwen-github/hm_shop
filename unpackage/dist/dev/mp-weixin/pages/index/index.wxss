@@ -32,4 +32,27 @@
   width: 100%;
   height: 100%;
 }
+.home .index-nav-wrapper {
+  display: flex;
+}
+.home .index-nav-wrapper .index-nav-item {
+  flex: 1;
+  text-align: center;
+}
+.home .index-nav-wrapper .index-nav-item text {
+  font-size: 30rpx;
+}
+.home .index-nav-wrapper .index-nav-item view {
+  margin: 10px auto;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #b50e03;
+  border-radius: 60%;
+  line-height: 120rpx;
+  color: #fff;
+  font-size: 50rpx;
+}
+.home .index-nav-wrapper .index-nav-item .icon-tupian {
+  font-size: 45rpx;
+}
 
