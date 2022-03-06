@@ -1,5 +1,8 @@
 import App from './App'
-
+// 按需导入api.js中封装的request
+import {myRequest} from 'util/api.js'
+// 挂载到vue的原型对象上，通过this.$request进行调用
+Vue.prototype.$request=myRequest
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
