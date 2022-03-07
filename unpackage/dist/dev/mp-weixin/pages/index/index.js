@@ -169,6 +169,43 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -180,6 +217,7 @@ var _default =
   // 当页面被创建时，会执行该生命周期函数
   onLoad: function onLoad() {
     this.getLunBoData();
+    this.getHotGoods();
   },
   methods: {
     //获取轮播图的数据
@@ -188,6 +226,13 @@ var _default =
                     url: '/api/getlunbo' }));case 2:res = _context.sent;
 
                 _this.swipers = res.data.message;case 4:case "end":return _context.stop();}}}, _callee);}))();
+    },
+    // 获取商品列表数据
+    getHotGoods: function getHotGoods() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  _this2.$request({
+                    url: '/api/getgoods?pageindex=1' }));case 2:res = _context2.sent;
+
+                console.log(res);case 4:case "end":return _context2.stop();}}}, _callee2);}))();
     } } };exports.default = _default;
 
 /***/ }),
